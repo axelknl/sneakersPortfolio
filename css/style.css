@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.home {
+    min-height: 100vh;
+    background: #4a148c;
+    color: white;
+}
+
+.home header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 50px;
+    line-height: 35px;
+}
+
+.home header .logo {
+    font-size: 24px;
+}
+
+.home header a {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.home header .menu a {
+    margin-left: 20px;
+}
+
+.container-home {
+    height: inherit;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 50px;
+    margin-bottom: 100px;
+    padding-top: 200px;
+}
+
+.container-home .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-home .textBox {
+    margin: auto 0;
+    max-width: 650px;
+}
+
+.container-home .textBox h2 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.container-home .textBox span {
+    font-size: 1.5em;
+}
+
+.container-home .textBox p {
+    margin-top: 30px;
+}
+
+.container-home .textBox a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 8px 20px;
+    background: white;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 40px;
+    font-weight: 500;
+}
+
+.container-home .imgBox {
+    margin: auto 0;
+    width: 100%;
+}
+
+.container-home .imgBox img {
+    width: inherit;
+}
+
+.container-home .social {
+    margin: auto 0;
+}
+
+.container-home .content i {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.home .thumb {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home .thumb ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.home .thumb li:hover {
+    transition-duration: 0.5s;
+    cursor: pointer;
+    transform: translateY(-25px);
+}
+
+.home .thumb img {
+    max-width: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container-home .textBox {
+        max-width: 450px;
+    }
+
+    .container-home .textBox span {
+        font-size: 1.25em;
+    }
+
+    .home .thumb {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home header .logo {
+        margin-bottom: 30px;
+    }
+
+    .container-home .content {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 75px;
+    }
+
+    .container-home .textBox {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .container-home .imgBox {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .container-home .social li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .home header {
+        padding: 20px 0px;
+    }
+
+    .home header .menu a {
+        margin-left: 0px;
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .container-home {
+        padding: 120px 20px 30px 20px;
+        margin-bottom: 0;
+    }
+
+    .container-home .textBox h2 {
+        font-size: 2em;
+    }
+
+    .home .thumb ul li {
+        margin: 0 0;
+    }
+
+    .home .thumb img {
+        width: 100px;
+    }
+}
